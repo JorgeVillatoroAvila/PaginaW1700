@@ -1,9 +1,10 @@
 body {
   font-family: Arial, sans-serif;
   text-align: center;
-  background-color: #030133; /* Cambia el color de fondo según tus preferencias */
+  background-color: #0a0a0a;
   margin: 0;
   padding: 0;
+  margin-top: 10px; /* Agregado para separar el cuerpo del encabezado */
 }
 
 .header-buttons {
@@ -18,11 +19,8 @@ body {
 }
 
 h1 {
-  
-    margin-top: 20px;
-    color: #ffffff; /* Cambia el color según tus preferencias */
-  
-  
+  margin-top: 20px;
+  color: #ffffff;
 }
 
 #moviesContainer {
@@ -30,16 +28,18 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 20px;
+  margin-bottom: 10px; /* Agregado para separar el cuerpo del pie de página */
 }
 
 .movie {
-  background-color: white;
-  border: 1px solid #0e0d0d;
+  background-color: rgb(12, 5, 87);
+  border: 1px solid #150148;
   border-radius: 5px;
   margin: 10px;
   padding: 10px;
   width: 300px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #f9f4f4;
 }
 
 .movie img {
@@ -50,15 +50,61 @@ h1 {
 
 #toggleLanguage {
   margin-top: 20px;
-  background-color: #333;
-  color: white;
+  background-color: #f7f3f3;
+  color: rgb(15, 15, 15);
+  border: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 18px;
+}
+
+#toggleLanguage:hover {
+  background-color: #f3f1f1;
+}
+
+/* Estilos para los botones de paginación */
+#pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#prevPage, #nextPage {
+  background-color: #fdfbfb;
+  color: rgb(15, 15, 15);
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin: 10px;
 }
 
-#toggleLanguage:hover {
+#prevPage:hover, #nextPage:hover {
   background-color: #555;
+}
+
+/* Estilos para el encabezado */
+.header {
+  background-color: #12025f;
+  padding: 10px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px; /* Agregado para separar el encabezado del cuerpo */
+}
+
+.header button, .header select, .header h1 {
+  margin: 0 10px;
+}
+
+/* Estilos para el pie de página */
+.footer {
+  background-color: #1a0768;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  margin-top: 10px; /* Agregado para separar el pie de página del cuerpo */
 }
