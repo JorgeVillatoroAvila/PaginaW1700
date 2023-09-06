@@ -4,7 +4,7 @@ body {
   background-color: #0a0a0a;
   margin: 0;
   padding: 0;
-  margin-top: 10px; /* Agregado para separar el cuerpo del encabezado */
+  margin-top: 10px; 
 }
 
 .header-buttons {
@@ -28,7 +28,7 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 20px;
-  margin-bottom: 10px; /* Agregado para separar el cuerpo del pie de página */
+  margin-bottom: 10px; 
 }
 
 .movie {
@@ -64,7 +64,7 @@ h1 {
   background-color: #f3f1f1;
 }
 
-/* Estilos para los botones de paginación */
+
 #pagination {
   margin-top: 20px;
   text-align: center;
@@ -85,7 +85,7 @@ h1 {
   background-color: #555;
 }
 
-/* Estilos para el encabezado */
+
 .header {
   background-color: #12025f;
   padding: 10px;
@@ -93,18 +93,18 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px; /* Agregado para separar el encabezado del cuerpo */
+  margin-bottom: 10px; 
 }
 
 .header button, .header select, .header h1 {
   margin: 0 10px;
 }
 
-/* Estilos para el pie de página */
+
 .footer {
   background-color: #1a0768;
   padding: 10px;
   color: white;
   text-align: center;
-  margin-top: 10px; /* Agregado para separar el pie de página del cuerpo */
+  margin-top: 10px; 
 }
