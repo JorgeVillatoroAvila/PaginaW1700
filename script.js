@@ -31,7 +31,7 @@ async function fetchMovies(genreId = '', page = 1) {
     const response = await fetch(`${apiUrl}/movie/popular?api_key=${apiKey}&language=${currentLanguage}&with_genres=${genreId}&page=${page}`);
     const data = await response.json();
     moviesContainer.innerHTML = '';
-    data.results.slice(0, 10).forEach(movie => { // Limita a 10 películas por página
+    data.results.slice(0, 10).forEach(movie => { 
       const movieDiv = document.createElement('div');
       movieDiv.classList.add('movie');
       movieDiv.innerHTML = `
@@ -46,13 +46,12 @@ async function fetchMovies(genreId = '', page = 1) {
   }
 }
 
-// Actualizar página al hacer clic en "Siguiente"
 nextPageButton.addEventListener('click', () => {
   currentPage++;
   fetchMovies(genreSelect.value, currentPage);
 });
 
-// Actualizar página al hacer clic en "Anterior"
+
 prevPageButton.addEventListener('click', () => {
   if (currentPage > 1) {
     currentPage--;
